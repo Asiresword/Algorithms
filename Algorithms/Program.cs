@@ -1,7 +1,6 @@
 ﻿using Algorithms.Sort;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace Algorithms
 {
@@ -12,13 +11,7 @@ namespace Algorithms
             Console.WriteLine(new string('-', 30));
         }
 
-        private static string GetElapsedTimeAsString(TimeSpan time)
-        {
-            return String.Format("sort elapsed time: {0:00}:{1:00}:{2:00}:{3:0000}",
-                                time.TotalHours, time.TotalMinutes, time.TotalSeconds, time.TotalMilliseconds);
-        }
-
-        internal static void Main(string[] args)
+        internal static void Main()
         {
             List<int> ListToSort = new List<int>();
             Random rand = new Random();
@@ -27,16 +20,16 @@ namespace Algorithms
                 ListToSort.Add(rand.Next(-100, 100));
             }
 
-            Stopwatch watch = new Stopwatch();
-
             #region Sorting algorithms
 
             #region Bubble Sort
-            watch.Start();
             BubbleSort.Sort(ListToSort);
-            watch.Stop();
+            #endregion
 
-            Console.WriteLine($"Bubble {GetElapsedTimeAsString(watch.Elapsed)}");
+            Separator();
+
+            #region Shaker Sort
+            ShakerSort.Sort(ListToSort);
             #endregion
 
             Separator();

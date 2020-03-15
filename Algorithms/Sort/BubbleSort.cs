@@ -8,16 +8,16 @@ namespace Algorithms.Sort
     {
         public static void Sort(List<int> ListToSort)
         {
-            for (int write = 0; write < ListToSort.Count; write++)
+            for (int i = 0; i < ListToSort.Count; i++)
             {
                 int temp = 0;
-                for (int sort = 0; sort < ListToSort.Count - 1; sort++)
+                for (int j = 0; j < ListToSort.Count - 1; j++)
                 {
-                    if (ListToSort[sort] > ListToSort[sort + 1])
+                    if (ListToSort[j] > ListToSort[j + 1])
                     {
-                        temp = ListToSort[sort + 1];
-                        ListToSort[sort + 1] = ListToSort[sort];
-                        ListToSort[sort] = temp;
+                        temp = ListToSort[j + 1];
+                        ListToSort[j + 1] = ListToSort[j];
+                        ListToSort[j] = temp;
                     }
                 }
             }
