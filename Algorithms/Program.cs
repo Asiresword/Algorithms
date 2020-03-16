@@ -44,6 +44,14 @@ namespace Algorithms
             InsertionSort.Sort(ListToSort);
             #endregion
 
+            Separator();
+
+            #region Shell Sort
+            ShellSort.Sort(ListToSort);
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
