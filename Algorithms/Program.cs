@@ -34,6 +34,12 @@ namespace Algorithms
 
             Separator();
 
+            #region Comb Sort
+            CombSort.Sort(ListToSort);
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
