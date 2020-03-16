@@ -40,6 +40,10 @@ namespace Algorithms
 
             Separator();
 
+            #region Insertion Sort
+            InsertionSort.Sort(ListToSort);
+            #endregion
+
             #endregion
         }
     }
