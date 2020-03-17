@@ -58,6 +58,12 @@ namespace Algorithms
 
             Separator();
 
+            #region Selection Sort
+            SelectionSort.Sort(ListToSort);
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
