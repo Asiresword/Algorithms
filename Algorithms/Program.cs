@@ -52,6 +52,12 @@ namespace Algorithms
 
             Separator();
 
+            #region Gnome Sort
+            GnomeSort.Sort(ListToSort);
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
