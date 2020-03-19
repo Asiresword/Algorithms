@@ -76,6 +76,10 @@ namespace Algorithms
 
             Separator();
 
+            #region Merge Sort
+            MergeSort.Sort(ListToSort);
+            #endregion
+
             #endregion
         }
     }
