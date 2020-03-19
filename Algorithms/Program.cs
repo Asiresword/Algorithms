@@ -70,6 +70,12 @@ namespace Algorithms
 
             Separator();
 
+            #region Quick Sort
+            QuickSort.Sort(ListToSort);
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
