@@ -64,6 +64,12 @@ namespace Algorithms
 
             Separator();
 
+            #region Heap Sort
+            HeapSort.Sort(ListToSort);
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
