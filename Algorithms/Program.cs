@@ -94,6 +94,10 @@ namespace Algorithms
             ListToFind.Add(10);
             ListToFind.Add(7);
 
+            // For some searching algorithms - we need a sorted container.
+            List<int> SortedList = new List<int>(ListToFind);
+            SortedList.Sort();
+
             #region Searching algorithms
 
             #region Linear search
@@ -103,11 +107,16 @@ namespace Algorithms
             Separator();
 
             #region Binary search
-            // For binary search - we need a sorted container.
-            List<int> BinarySorted = new List<int>(ListToFind);
-            BinarySorted.Sort();
-            Console.WriteLine(BinarySearch.Find(BinarySorted, 3));
+            Console.WriteLine(BinarySearch.Find(SortedList, 3));
             #endregion
+
+            Separator();
+
+            #region Jump search
+            Console.WriteLine(JumpSearch.Find(SortedList, 3));
+            #endregion
+
+            Separator();
 
             #endregion
         }
