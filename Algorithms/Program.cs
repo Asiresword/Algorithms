@@ -102,6 +102,13 @@ namespace Algorithms
 
             Separator();
 
+            #region Binary search
+            // For binary search - we need a sorted container.
+            List<int> BinarySorted = new List<int>(ListToFind);
+            BinarySorted.Sort();
+            Console.WriteLine(BinarySearch.Find(BinarySorted, 3));
+            #endregion
+
             #endregion
         }
     }
