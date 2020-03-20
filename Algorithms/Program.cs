@@ -1,4 +1,5 @@
-﻿using Algorithms.Sort;
+﻿using Algorithms.Search;
+using Algorithms.Sort;
 using System;
 using System.Collections.Generic;
 
@@ -79,6 +80,27 @@ namespace Algorithms
             #region Merge Sort
             MergeSort.Sort(ListToSort);
             #endregion
+
+            #endregion
+
+            Separator();
+            Separator();
+            Separator();
+
+            List<int> ListToFind = new List<int>();
+            ListToFind.Add(1);
+            ListToFind.Add(6);
+            ListToFind.Add(3);
+            ListToFind.Add(10);
+            ListToFind.Add(7);
+
+            #region Searching algorithms
+
+            #region Linear search
+            Console.WriteLine(LinearSearch.Find(ListToFind, 6));
+            #endregion
+
+            Separator();
 
             #endregion
         }
