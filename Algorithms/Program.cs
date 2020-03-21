@@ -124,6 +124,12 @@ namespace Algorithms
 
             Separator();
 
+            #region Exponential search
+            Console.WriteLine(ExponentialSearch.Find(SortedList, 3));
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
