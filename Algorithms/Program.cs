@@ -130,6 +130,12 @@ namespace Algorithms
 
             Separator();
 
+            #region Fibonacci search
+            Console.WriteLine(FibonacciSearch.Find(SortedList, 3));
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
