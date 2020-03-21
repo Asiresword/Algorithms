@@ -118,6 +118,12 @@ namespace Algorithms
 
             Separator();
 
+            #region Interpolation search
+            Console.WriteLine(InterpolationSearch.Find(SortedList, 3));
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
