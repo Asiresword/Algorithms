@@ -142,6 +142,12 @@ namespace Algorithms
 
             Separator();
 
+            #region Ternary search
+            Console.WriteLine(TernarySearch.Find(SortedList, 3));
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
