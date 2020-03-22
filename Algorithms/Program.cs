@@ -136,6 +136,12 @@ namespace Algorithms
 
             Separator();
 
+            #region Recursive search
+            Console.WriteLine(RecursiveSearch.Find(ListToFind, 6));
+            #endregion
+
+            Separator();
+
             #endregion
         }
     }
