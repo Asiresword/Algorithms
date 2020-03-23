@@ -267,12 +267,6 @@ namespace Algorithms
 
             Separator();
 
-            #region Ubiquitous binary search
-            Console.WriteLine(UbiquitousBinarySearch.Find(SortedList, 3));
-            #endregion
-
-            Separator();
-
             #endregion
         }
     }
