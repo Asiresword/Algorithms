@@ -24,60 +24,124 @@ namespace Algorithms
             #region Sorting algorithms
 
             #region Bubble Sort
+            /*
+                Bubble sort - one of the simplest sorting algorithms, which works by repeatedly swapping the adjacent elements.
+                    Best computational complexity: O(n²)
+                    Average computational complexity: O(n²)
+                    Worst computational complexity: O(n²)
+            */
             BubbleSort.Sort(ListToSort);
             #endregion
 
             Separator();
 
             #region Shaker Sort
+            /*
+                Shaker sort/Cocktail sort - variation of bubble sorting algorithm. Unlike bubble sort, it orders array in both directions.
+                    Best computational complexity: O(n)
+                    Average computational complexity: O(n²)
+                    Worst computational complexity: O(n²)
+            */
             ShakerSort.Sort(ListToSort);
             #endregion
 
             Separator();
 
             #region Comb Sort
+            /*
+                Comb sort - variation of bubble sort algorithm. It uses gap of size more than 1, 
+                            which starts with a large value and shrinks by a factor of 1.3 in every iteration until it reaches the value 1.
+                    Best computational complexity: O(n log n)
+                    Average computational complexity: O(n²)
+                    Worst computational complexity: O(n²)
+            */
             CombSort.Sort(ListToSort);
             #endregion
 
             Separator();
 
             #region Insertion Sort
+            /*
+                Insertion sort - a sorting algorithm in which the elements are transferred one at a time to the right position.
+                    Best computational complexity: O(n)
+                    Average computational complexity: O(n²)
+                    Worst computational complexity: O(n²)
+            */
             InsertionSort.Sort(ListToSort);
             #endregion
 
             Separator();
 
             #region Shell Sort
+            /*
+                Shell sort - variation of insertion sorting algorithm. It sorting pairs of elements far apart from each other, 
+                             then progressively reducing the gap between elements to be compared.
+                    Best computational complexity: O(n log n)
+                    Average computational complexity: O(n²)
+                    Worst computational complexity: O(n²)
+            */
             ShellSort.Sort(ListToSort);
             #endregion
 
             Separator();
 
             #region Gnome Sort
+            /*
+                Gnome sort - one of the simplest sorting algorithms, finds the first place 
+                             where two adjacent elements are in the wrong order and swaps them.
+                    Best computational complexity: O(n)
+                    Average computational complexity: O(n²)
+                    Worst computational complexity: O(n²)
+            */
             GnomeSort.Sort(ListToSort);
             #endregion
 
             Separator();
 
             #region Selection Sort
+            /*
+                Selection sort - works by repeatedly finding the minimum element from unsorted part and putting it at the beginning.
+                    Best computational complexity: O(n)
+                    Average computational complexity: O(n²)
+                    Worst computational complexity: O(n²)
+            */
             SelectionSort.Sort(ListToSort);
             #endregion
 
             Separator();
 
             #region Heap Sort
+            /*
+                Heap sort - works by repeatedly finding the maximum element from unsorted part and putting it at the end.
+                    Best computational complexity: O(n log n)
+                    Average computational complexity: O(n log n)
+                    Worst computational complexity: O(n log n)
+            */
             HeapSort.Sort(ListToSort);
             #endregion
 
             Separator();
 
             #region Quick Sort
+            /*
+                Quick sort - works by picking an element as pivot and partitions the given array around the picked pivot.
+                    Best computational complexity: O(n)
+                    Average computational complexity: O(n log n)
+                    Worst computational complexity: O(n²)
+            */
             QuickSort.Sort(ListToSort);
             #endregion
 
             Separator();
 
             #region Merge Sort
+            /*
+                Merge sort - works by dividing input container in two halves, calls itself for the two halves 
+                             and then merges the two sorted halves.
+                    Best computational complexity: O(n)
+                    Average computational complexity: O(n log n)
+                    Worst computational complexity: O(n log n)
+            */
             MergeSort.Sort(ListToSort);
             #endregion
 
