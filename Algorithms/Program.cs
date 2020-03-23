@@ -14,6 +14,11 @@ namespace Algorithms
 
         internal static void Main()
         {
+            /*
+                Big O notation is a mathematical notation that describes 
+                the limiting behavior of a function when the argument tends towards a particular value or infinity. 
+            */
+
             List<int> ListToSort = new List<int>();
             Random rand = new Random();
             for(int i = 0; i < rand.Next(5, 20); i++)
@@ -165,48 +170,98 @@ namespace Algorithms
             #region Searching algorithms
 
             #region Linear search
+            /*
+                Linear search - one of the simplest searching algorithms, which works by sequentially checking
+                                each element of the list until a match is found or the whole list has been searched.
+                    Best computational complexity: O(1)
+                    Average computational complexity: O(n)
+                    Worst computational complexity: O(n)
+            */
             Console.WriteLine(LinearSearch.Find(ListToFind, 6));
             #endregion
 
             Separator();
 
             #region Binary search
+            /*
+                Binary search - works by comparing the target value to the middle element of the container.
+                    Best computational complexity: O(1)
+                    Average computational complexity: O(log n)
+                    Worst computational complexity: O(log n)
+            */
             Console.WriteLine(BinarySearch.Find(SortedList, 3));
             #endregion
 
             Separator();
 
             #region Jump search
+            /*
+                Jump search - works by jumping ahead by fixed steps or skipping some elements in place of searching all elements.
+                    Best computational complexity: O(1)
+                    Average computational complexity: O(log n)
+                    Worst computational complexity: O(log n)
+            */
             Console.WriteLine(JumpSearch.Find(SortedList, 3));
             #endregion
 
             Separator();
 
             #region Interpolation search
+            /*
+                Interpolation search - variation of binary search. Works just like binary search, but can start from any position.
+                    Best computational complexity: O(1)
+                    Average computational complexity: O(log n)
+                    Worst computational complexity: O(n)
+            */
             Console.WriteLine(InterpolationSearch.Find(SortedList, 3));
             #endregion
 
             Separator();
 
             #region Exponential search
+            /*
+                Exponential search - works by searching a range, where is element may be present 
+                                     and then uses a binary search within this range.
+                    Best computational complexity: O(1)
+                    Average computational complexity: O(log n)
+                    Worst computational complexity: O(log n)
+            */
             Console.WriteLine(ExponentialSearch.Find(SortedList, 3));
             #endregion
 
             Separator();
 
             #region Fibonacci search
+            /*
+                Fibonacci search - works by finding the smallest fibonacci number greater or equal to container size and then searching value within it.
+                    Best computational complexity: O(1)
+                    Average computational complexity: O(log n)
+                    Worst computational complexity: O(log n)
+            */
             Console.WriteLine(FibonacciSearch.Find(SortedList, 3));
             #endregion
 
             Separator();
 
             #region Recursive search
+            /*
+                Recursive search - works by recursively passing through the container.
+                    Best computational complexity: O(1)
+                    Average computational complexity: O(log n)
+                    Worst computational complexity: O(log n)
+            */
             Console.WriteLine(RecursiveSearch.Find(ListToFind, 6));
             #endregion
 
             Separator();
 
             #region Ternary search
+            /*
+                Ternary search - works by dividing container into 3 parts and determine which has the key. Then recursively search for an index.
+                    Best computational complexity: O(1)
+                    Average computational complexity: O(log n)
+                    Worst computational complexity: O(log n)
+            */
             Console.WriteLine(TernarySearch.Find(SortedList, 3));
             #endregion
 
